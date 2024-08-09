@@ -20,7 +20,7 @@ const {{componentName}} = (props: {{componentName}}Props) => {
         [`ant-btn-${type}`]: type,
         [className as string]: !!className
     })
-    return <span {...others} className={cls} style={style} >{children}</span>;
+    return <{{componentName}} {...others} className={cls} style={style} >{children}</{{componentName}}>;
 }
 
 export default {{componentName}};
