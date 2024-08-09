@@ -1,4 +1,4 @@
-import React, { ReactNode, CSSProperties } from "react";
+import React from "react";
 import classNames from "classnames";
 
 import "./index.scss";
