@@ -6,15 +6,15 @@ import {{componentName}} from './index';
 export default {
   title: 'Example/{{componentName}}',
   component: {{componentName}},
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof {{componentName}}>;
+type Story = StoryObj<typeof {{componentName}}>;
 
-const Template: StoryObj<typeof {{componentName}}> = (args) => <{{componentName}} {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  type: 'primary',
-  children: '{{componentName}}',
-};
+export const Primary: Story = {
+  args: {
+    type: 'primary',
+    children: '{{componentName}}',
+  }
+}
 
 export const Basic = () => {
   return <>
