@@ -11,7 +11,7 @@ export interface {{componentName}}Props extends React.HTMLAttributes<HTMLDivElem
     style?: CSSProperties;
 }
 
-const {{componentName}} = (props: {{dirName}}Props) => {
+const {{componentName}} = (props: {{componentName}}Props) => {
     const {className, type = 'normal', size = 'medium', children, style, ...others} = props;
 
     const cls = classNames({
