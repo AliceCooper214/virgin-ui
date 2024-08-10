@@ -25,7 +25,7 @@ const Tag = (props: TagProps) => {
   const [visible, setVisible] = React.useState(true);
 
   React.useEffect(() => {
-    if ("visible" in props && typeof props.visible !== "undefined") {
+    if ("visible" in props && props.visible !== undefined) {
       setVisible(props.visible);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
